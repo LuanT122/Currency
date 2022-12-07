@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+   <LinearLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_margin="@dimen/cardview_compat_inset_shadow">
+
+       <TextView
+           android:id="@+id/tv_input"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:gravity="left"
+           android:text="From: USD"
+           android:textSize="24sp"
+
+           ></TextView>
+
+       <EditText
+           android:id="@+id/txt_input"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:gravity="left"
+           android:hint="Enter a number"
+           android:inputType="number"
+           android:textSize="24sp" />
+       <TextView
+           android:id="@+id/tv_output"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:gravity="left"
+           android:text="To: VND"
+           android:textSize="24sp"
+           ></TextView>
+
+       <EditText
+           android:id="@+id/txt_output"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:gravity="left"
+           android:hint="Result here"
+           android:inputType="number"
+           android:textSize="24sp" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:gravity="right"
+           >
+           <Button
+               android:id="@+id/btn_convert"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Convert"
+               android:layout_marginHorizontal="8dp"
+               >
+
+           </Button>
+           <Button
+               android:id="@+id/btn_clear"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Clear"
+               android:layout_marginHorizontal="8dp"
+               >
+
+           </Button>
+
+       </LinearLayout>
+
+   </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
